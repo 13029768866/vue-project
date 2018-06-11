@@ -1,9 +1,11 @@
 <template>
     <div>
+      <MHead>添加</MHead>
         add
     </div>
 </template>
 <script>
+import MHead from '../base/MHead.vue';
 export default {
   data() {
     return {};
@@ -11,7 +13,9 @@ export default {
   created() {},
   methods: {},
   computed: {},
-  components: {}
+  components: {
+    MHead
+  }
 };
 </script>
 <style scoped>

@@ -1,9 +1,11 @@
 <template>
     <div>
+      <MHead>收藏</MHead>
         collect
     </div>
 </template>
 <script>
+import MHead from '../base/MHead';
 export default {
   data() {
     return {};
@@ -11,7 +13,9 @@ export default {
   created() {},
   methods: {},
   computed: {},
-  components: {}
+  components: {
+    MHead
+  }
 };
 </script>
 <style scoped>

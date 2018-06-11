@@ -1,16 +1,30 @@
 <template>
     <div class="header">
-      <i class="iconfont icon-fanhui"></i>
-        首页      
+      <slot></slot>
+      <i class="iconfont icon-fanhui"
+          v-if="back"
+          @click="goBack"   
+      ></i>
+            
     </div>
 </template>
 <script>
 export default {
+  props:{
+    back:{
+      type:Boolean,
+      default:false
+    }
+  },
   data() {
     return {};
   },
   created() {},
-  methods: {},
+  methods: {
+    goBack(){
+      this.$router.go(-1)
+    }
+  },
   computed: {},
   components: {}
 };
@@ -29,6 +43,7 @@ export default {
     i{
       position: absolute;
       left: 15px;
+      font-size: 22px;
     }
   }
 </style>

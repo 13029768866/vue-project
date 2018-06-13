@@ -43,3 +43,29 @@
             
     }
 </style>
+<script type="text/javascript">
+/*var a = [1,2,3]
+var b = [5,6]
+function change(a,b){	
+	a[0] = 4;
+	var c = a;
+	a = b;
+	b = c;
+	console.log(a)
+	console.log(b)
+}
+change(a,b);
+console.log(a)
+console.log(b)*/
+
+function foo(){console.log(1)}
+function bar(){console.log(2)}
+function test(){
+	console.log(typeof foo);
+	console.log(typeof bar)
+	foo();bar();
+	function foo(){console.log(3)}
+	var bar = function(){console.log(4)}		
+}
+test()
+</script>
